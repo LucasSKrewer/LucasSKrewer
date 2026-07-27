@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="1000" height="200"
+     role="img" aria-label="LucasSKrewer — Analista de TI, Python/Flask, automação de processos; mods de jogos, C++, netcode">
+  <defs>
+    <pattern id="ad-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.045"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="200" fill="#0d1117"/>
+  <rect width="1000" height="200" fill="url(#ad-grid)"/>
+
+  <!-- marca de margem -->
+  <rect x="44" y="58" width="5" height="36" fill="#E8913A"/>
+
+  <text x="68" y="90" fill="#E6EDF3"
+        font-family="SFMono-Regular, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace"
+        font-size="42" letter-spacing="-0.5">LucasSKrewer</text>
+
+  <line x1="68" y1="114" x2="660" y2="114" stroke="#21262D" stroke-width="1"/>
+
+  <text x="68" y="143" fill="#8B949E"
+        font-family="SFMono-Regular, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace"
+        font-size="16">Analista de TI &#183; Python / Flask &#183; automa&#231;&#227;o de processos</text>
+  <text x="68" y="167" fill="#8B949E"
+        font-family="SFMono-Regular, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace"
+        font-size="16">mods de jogos &#183; C++ &#183; netcode</text>
+
+  <!-- motivo: relay de estado host <-> peers -->
+  <g stroke="#30363D" stroke-width="1.2" fill="none">
+    <line x1="893" y1="100" x2="800" y2="53"/>
+    <line x1="893" y1="100" x2="776" y2="100"/>
+    <line x1="893" y1="100" x2="800" y2="147"/>
+  </g>
+  <path d="M 800 53 Q 958 100 800 147" fill="none" stroke="#E8913A" stroke-width="1.4" opacity="0.85"/>
+  <g fill="#0d1117" stroke="#546069" stroke-width="1.4">
+    <circle cx="800" cy="53" r="5.5"/>
+    <circle cx="776" cy="100" r="5.5"/>
+    <circle cx="800" cy="147" r="5.5"/>
+  </g>
+  <circle cx="893" cy="100" r="8" fill="#E8913A"/>
+</svg>

@@ -1,4 +1,8 @@
-## Lucas Krewer
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-a-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-a-light.svg">
+  <img alt="LucasSKrewer — Analista de TI, Python/Flask, automação de processos; mods de jogos, C++, netcode" src="assets/banner-a-light.svg" width="100%">
+</picture>
 
 Analista de TI em uma indústria metalúrgica, onde toco a área sozinho — infraestrutura,
 suporte e, a parte que mais gosto, **construir os sistemas internos que a empresa usa todo dia**.
