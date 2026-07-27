@@ -4,14 +4,13 @@
   <img alt="LucasSKrewer — Analista de TI, Python/Flask, automação de processos; mods de jogos, C++, netcode" src="assets/banner-a-light.svg" width="100%">
 </picture>
 
-Analista de TI em uma indústria metalúrgica, onde toco a área sozinho — infraestrutura,
-suporte e, a parte que mais gosto, **construir os sistemas internos que a empresa usa todo dia**.
+Analista de TI em uma indústria metalúrgica, cobrindo da infraestrutura à aplicação.
+A parte que mais gosto é **construir os sistemas internos que a empresa usa todo dia**.
 
 Meu trabalho quase sempre começa igual: alguém perdendo horas numa planilha.
 E termina com uma ferramenta web que faz aquilo em segundos.
 
-Fora do expediente, mods de jogos — que é onde eu encosto em C++, engenharia reversa
-e netcode.
+Fora do expediente, mods de jogos — onde encosto em C++, engenharia reversa e netcode.
 
 ### Stack do dia a dia
 
@@ -22,12 +21,23 @@ e netcode.
 
 ### Projetos públicos
 
-**[conciliador_nfe](https://github.com/LucasSKrewer/conciliador_nfe)** — compara a planilha
-de NF-e da SEFAZ com o que foi lançado no sistema interno e mostra exatamente o que falta.
-Flask + SQLite, roda local.
+**[forja-video](https://github.com/LucasSKrewer/forja-video)** — kit de produção de vídeo
+faceless para o Claude Code: agentes, skills e os scripts que levam um episódio da pesquisa
+ao Short. ffmpeg + edge-tts + Wikimedia, sem API paga.
 
-**[jlpt-estudos](https://github.com/LucasSKrewer/jlpt-estudos)** — sistema de estudo de
-vocabulário japonês (JLPT N5 e N4), com roadmap progressivo por tópico e progresso por palavra.
+**[conciliador_nfe](https://github.com/LucasSKrewer/conciliador_nfe)** — compara a planilha
+de NF-e da SEFAZ com o que foi lançado no sistema interno e aponta o que falta. Flask + SQLite.
+
+**[cripto-backtester](https://github.com/LucasSKrewer/cripto-backtester)** — testa estratégia
+de trading sobre histórico real da Binance, sem chave de API e sem ordem enviada a lugar
+nenhum. Cuida de não usar o preço do próprio candle na decisão, que é o erro que faz backtest
+mentir.
+
+**[musicgen-local](https://github.com/LucasSKrewer/musicgen-local)** — trilha instrumental
+gerada offline com MusicGen, costurando trechos para passar do limite de 30 s do modelo.
+
+**[jlpt-estudos](https://github.com/LucasSKrewer/jlpt-estudos)** — estudo de vocabulário
+japonês (JLPT N5 e N4), com roadmap por tópico e progresso por palavra.
 
 A maior parte do que escrevo é interno e não sai da empresa. O que está aqui é a fatia que dá pra abrir.
 
