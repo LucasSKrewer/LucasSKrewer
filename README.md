@@ -1,68 +1,82 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-a-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-a-light.svg">
-  <img alt="LucasSKrewer — Analista de TI, Python/Flask, automação de processos; mods de jogos, C++, netcode" src="assets/banner-a-light.svg" width="100%">
+  <img alt="LucasSKrewer — IT Analyst, Python/Flask, infrastructure to application; game mods, C++, reverse engineering, netcode" src="assets/banner-a-light.svg" width="100%">
 </picture>
 
-Analista de TI em uma indústria metalúrgica, cobrindo da infraestrutura à aplicação.
-A parte que mais gosto é **construir os sistemas internos que a empresa usa todo dia**.
+IT analyst at a metalworking company, covering everything from infrastructure to the
+application layer. The part I like most is **building the internal systems the company
+runs on every day**.
 
-Meu trabalho quase sempre começa igual: alguém perdendo horas numa planilha.
-E termina com uma ferramenta web que faz aquilo em segundos.
+My work almost always starts the same way: someone losing hours to a spreadsheet.
+It ends with a web tool that does the same thing in seconds.
 
-Fora do expediente, mods de jogos — onde encosto em C++, engenharia reversa e netcode.
+Outside work, game mods — where I get to touch C++, reverse engineering and netcode.
 
-### Stack do dia a dia
+### Daily stack
 
-- **Python** — Flask, SQLite, pandas, automação de rotinas
-- **Web** — HTML/CSS/JS sem framework, renderização server-side
-- **Windows** — PowerShell, Waitress, deploy em servidor local
-- **Dados** — conciliação fiscal e financeira, XML de NF-e, ETL de planilhas
+- **Python** — Flask, SQLite, pandas, routine automation
+- **Web** — HTML/CSS/JS with no framework, server-side rendering
+- **Windows** — PowerShell, Waitress, on-premise server deployment
+- **Data** — fiscal and financial reconciliation, NF-e XML, spreadsheet ETL
 
-### Projetos públicos
+### Public projects
 
-**[forja-video](https://github.com/LucasSKrewer/forja-video)** — kit de produção de vídeo
-faceless para o Claude Code: agentes, skills e os scripts que levam um episódio da pesquisa
-ao Short. ffmpeg + edge-tts + Wikimedia, sem API paga.
+**[dnc_micro_toolkit](https://github.com/LucasSKrewer/dnc_micro_toolkit)** — transfers
+G-code programs to CNC machines over three transports (Fanuc FOCAS, RS-232, WiFi DNC box),
+with no proprietary DNC software. The box's protocol — TFTP over UDP/69 but with its own
+opcodes and packet format — was mapped by reverse engineering the vendor's .NET installer,
+running its packet constructors via reflection and capturing the real bytes. Documented
+byte by byte in the repo.
 
-**[conciliador_nfe](https://github.com/LucasSKrewer/conciliador_nfe)** — compara a planilha
-de NF-e da SEFAZ com o que foi lançado no sistema interno e aponta o que falta. Flask + SQLite.
+**[conciliador_nfe](https://github.com/LucasSKrewer/conciliador_nfe)** — compares the
+SEFAZ NF-e spreadsheet against what was actually entered in the internal system and reports
+what's missing. Flask + SQLite.
 
-**[cripto-backtester](https://github.com/LucasSKrewer/cripto-backtester)** — testa estratégia
-de trading sobre histórico real da Binance, sem chave de API e sem ordem enviada a lugar
-nenhum. Cuida de não usar o preço do próprio candle na decisão, que é o erro que faz backtest
-mentir.
+**[lsk_backup](https://github.com/LucasSKrewer/lsk_backup)** — 3-2-1 backup for the small
+businesses I support: a PySide6 tray app over rclone, built so a non-technical user can
+check that last night's backup actually ran.
 
-**[musicgen-local](https://github.com/LucasSKrewer/musicgen-local)** — trilha instrumental
-gerada offline com MusicGen, costurando trechos para passar do limite de 30 s do modelo.
+**[cripto-backtester](https://github.com/LucasSKrewer/cripto-backtester)** — backtests
+trading strategies against real Binance history, with no API key and no order sent anywhere.
+It's careful not to use the current candle's own price in the decision, which is the mistake
+that makes backtests lie.
 
-**[jlpt-estudos](https://github.com/LucasSKrewer/jlpt-estudos)** — estudo de vocabulário
-japonês (JLPT N5 e N4), com roadmap por tópico e progresso por palavra.
+**[forja-video](https://github.com/LucasSKrewer/forja-video)** — faceless video production
+kit for Claude Code: the agents, skills and scripts that take an episode from research to
+a finished Short. ffmpeg + edge-tts + Wikimedia, no paid API.
 
-A maior parte do que escrevo é interno e não sai da empresa. O que está aqui é a fatia que dá pra abrir.
+**[musicgen-local](https://github.com/LucasSKrewer/musicgen-local)** — instrumental tracks
+generated offline with MusicGen, stitching segments together to get past the model's 30 s limit.
 
-### Mods de jogos
+**[jlpt-estudos](https://github.com/LucasSKrewer/jlpt-estudos)** — Japanese vocabulary study
+for JLPT N5 and N4, with a roadmap by topic and per-word progress.
 
-Modding me dá o tipo de problema que o trabalho não dá: código de outra pessoa, sem
-documentação, sem o fonte do jogo, e um compilador de 2010 como requisito.
+Most of what I write is internal and stays at the company. What's here is the slice I can open up.
+
+### Game mods
+
+Modding gives me the kind of problem work doesn't: someone else's code, no documentation,
+no game source, and a 2010 compiler as a hard requirement.
 
 **[KenshiCoop](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)**
-— fork experimental. O mod original é do [nhoral](https://github.com/nhoral/KenshiCoop)
-(AGPL-3.0) e leva o Kenshi de single-player para co-op de dois jogadores; todo o crédito
-pelo mod é dele.
+— experimental fork. The original mod is by [nhoral](https://github.com/nhoral/KenshiCoop)
+(AGPL-3.0) and takes Kenshi from single-player to two-player co-op; all credit for the mod
+goes to them.
 
-Eu quis saber se a arquitetura de sincronização aguentava um grupo maior — uma direção
-que o autor deliberadamente não segue, então virou fork em vez de issue. Na branch
-[`experimento-3-jogadores`](https://github.com/LucasSKrewer/KenshiCoop/tree/experimento-3-jogadores):
+I wanted to know whether the synchronization architecture could hold a larger group — a
+direction the author deliberately doesn't pursue, so it became a fork rather than an issue.
+On the [`experimento-3-jogadores`](https://github.com/LucasSKrewer/KenshiCoop/tree/experimento-3-jogadores)
+branch:
 
-- **Relay entre peers** — o host passa a repassar estado autorado por um peer aos
-  *outros* peers, em um único ponto de estrangulamento, com política explícita por tipo
-  de pacote e 42 asserções travando a tabela. No-op com dois jogadores.
-- **Limpeza de estado por peer** — a saída de um jogador varria a sessão inteira,
-  derrubando os proxies de quem ficou. Agora cada peer é varrido individualmente.
-- **Guarda de sequência por remetente** — este é bug de verdade, não mudança de N: a
-  documentação promete `seq` monotônico *por remetente*, mas a linha guardava um escalar
-  só. Dois remetentes com contadores independentes se matavam de fome mutuamente.
+- **Peer-to-peer relay** — the host now forwards state authored by one peer to the *other*
+  peers, through a single chokepoint, with an explicit per-packet-type policy and 42
+  assertions pinning the table down. A no-op with two players.
+- **Per-peer state cleanup** — one player leaving used to sweep the entire session, tearing
+  down the proxies of everyone who stayed. Each peer is now swept individually.
+- **Per-sender sequence guard** — this one is a real bug, not an N-player change: the docs
+  promise a monotonic `seq` *per sender*, but the line kept a single scalar. Two senders with
+  independent counters would starve each other out.
 
-Ainda não é N-ready, e o [FORK-NOTES](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)
-lista honestamente o que falta.
+It isn't N-ready yet, and the [FORK-NOTES](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)
+list honestly what's still missing.

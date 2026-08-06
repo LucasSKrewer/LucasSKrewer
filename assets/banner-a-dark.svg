@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" width="1000" height="200"
-     role="img" aria-label="LucasSKrewer — Analista de TI, Python/Flask, automação de processos; mods de jogos, C++, netcode">
+     role="img" aria-label="LucasSKrewer — IT Analyst, Python/Flask, infrastructure to application; game mods, C++, reverse engineering, netcode">
   <defs>
     <pattern id="ad-grid" width="20" height="20" patternUnits="userSpaceOnUse">
       <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.045"/>
@@ -21,10 +21,10 @@
 
   <text x="68" y="143" fill="#8B949E"
         font-family="SFMono-Regular, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace"
-        font-size="16">Analista de TI &#183; Python / Flask &#183; automa&#231;&#227;o de processos</text>
+        font-size="16">IT Analyst &#183; Python / Flask &#183; infrastructure to application</text>
   <text x="68" y="167" fill="#8B949E"
         font-family="SFMono-Regular, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace"
-        font-size="16">mods de jogos &#183; C++ &#183; netcode</text>
+        font-size="16">game mods &#183; C++ &#183; reverse engineering &#183; netcode</text>
 
   <!-- motivo: relay de estado host <-> peers -->
   <g stroke="#30363D" stroke-width="1.2" fill="none">
