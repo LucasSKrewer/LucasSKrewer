@@ -56,27 +56,19 @@ Most of what I write is internal and stays at the company. What's here is the sl
 
 ### Game mods
 
-Modding gives me the kind of problem work doesn't: someone else's code, no documentation,
-no game source, and a 2010 compiler as a hard requirement.
+**DayZ** — a suite of my own mods for a modded server (Chernarus, BR), written in Enforce
+Script: trading with a **Brazilian Real currency across 7 banknotes** and exact change,
+keycards that lock rooms full of loot, territory with a plot pole and rent, retextured
+clothing and a digital lock. A custom PBO build/signing toolchain and a **headless asset
+pipeline** (Blender + Pillow) that generates models and textures without opening an editor.
 
-**[KenshiCoop](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)**
-— experimental fork. The original mod is by [nhoral](https://github.com/nhoral/KenshiCoop)
-(AGPL-3.0) and takes Kenshi from single-player to two-player co-op; all credit for the mod
-goes to them.
+**[dz-testbench](https://github.com/LucasSKrewer/dz-testbench)** — an assertion/runner test
+framework for DayZ mods (Enforce Script), running at server boot and writing results to JSON.
+Nothing like it existed in the community. MIT.
 
-I wanted to know whether the synchronization architecture could hold a larger group — a
-direction the author deliberately doesn't pursue, so it became a fork rather than an issue.
-On the [`experimento-3-jogadores`](https://github.com/LucasSKrewer/KenshiCoop/tree/experimento-3-jogadores)
-branch:
-
-- **Peer-to-peer relay** — the host now forwards state authored by one peer to the *other*
-  peers, through a single chokepoint, with an explicit per-packet-type policy and 42
-  assertions pinning the table down. A no-op with two players.
-- **Per-peer state cleanup** — one player leaving used to sweep the entire session, tearing
-  down the proxies of everyone who stayed. Each peer is now swept individually.
-- **Per-sender sequence guard** — this one is a real bug, not an N-player change: the docs
-  promise a monotonic `seq` *per sender*, but the line kept a single scalar. Two senders with
-  independent counters would starve each other out.
-
-It isn't N-ready yet, and the [FORK-NOTES](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)
-list honestly what's still missing.
+**[KenshiCoop](https://github.com/LucasSKrewer/KenshiCoop/tree/experimento-3-jogadores)** —
+experimental fork of [nhoral](https://github.com/nhoral/KenshiCoop)'s co-op mod (AGPL-3.0, all
+credit for the mod goes to them). I wanted to see whether the sync architecture could hold 3
+players: a peer-to-peer relay, per-peer state cleanup, and a real per-sender monotonic `seq`
+bug — the [FORK-NOTES](https://github.com/LucasSKrewer/KenshiCoop/blob/experimento-3-jogadores/FORK-NOTES.md)
+list what's still missing.
